@@ -1,9 +1,7 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_map/routes/approutes.dart';
-import 'package:google_map/view/google_map_screen/google_map_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,8 +23,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
-          home: GoogleMapScreen(),
-          // getPages: AppRoutes.appRoutes(),
+          getPages: AppRoutes.appRoutes(),
         );
       },
     );
